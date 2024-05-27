@@ -1,0 +1,61 @@
+<%- include ('partials/header.ejs') %>
+    <%- include ('partials/homenavbar.ejs') %>
+
+        <body>
+            <div class="pets">
+                <img src="pets.jpg" alt="imagem de animais">
+            </div>
+            <div class="line"></div>
+            <div class="thin-line"></div>
+
+            <div class="container-text">
+                <div class="text">
+                    <h1><strong>SOBRE</strong></h1>
+                    <p><strong>O Pet Detective é uma plataforma online dedicada a conectar proprietários de
+                            animais de estimação perdidos com pessoas que possam ter avistado ou encontrado esses
+                            animais. Funciona como uma espécie de "rede de detetives de estimação", onde a
+                            comunidade se une para ajudar a localizar animais desaparecidos.</strong></p>
+                            <a href="/info" class="btn">Mais informações</a>
+                </div>
+                <img src="pata2.png" alt="">
+            </div>
+
+            <div class="separator">
+                <h1>POSTAGENS</h1>
+            </div>
+
+            <div class="cards-container">
+                <% articles.forEach(article=> { %>
+                    <div class="container-card">
+                        <div class="card">
+                            <h3>
+                                <%= article.title %>
+                            </h3>
+                            <hr>
+                            <div class="card-body">
+                                <a href="<%= article.slug %>" class="btn-home">Ler artigo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <% }) %>
+            </div>
+
+
+            <!-- <div class="button-next">
+                <a class="button" href="/articles/page/2"><strong>Next</strong></a>
+             </div>-->
+
+            <div class="fundador">
+                <h1><strong>Fundador</strong></h1>
+                <h2><strong>Thiago Cruz Machado</strong></h2>
+                <div class="fundador-photos">
+                    <img class="logo" src="logo-removebg-preview.png" alt="logo">
+                    <img class="setas" src="setas.png" alt="setas">
+                    <img class="thiago" src="foto-recortada.jpg" alt="thiago">
+                </div>
+            </div>
+
+
+        </body>
+
+        <%- include ('partials/footer.ejs') %>

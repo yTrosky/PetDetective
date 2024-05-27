@@ -1,0 +1,440 @@
+body {
+    background-color: #43812B;
+    display: flex;
+    /* Define o corpo como um container flexbox */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    min-height: 100vh;
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6%;
+    /* Adiciona um padding de 20px à esquerda e à direita */
+    background-color: #6DA25C;
+}
+
+.logo-and-title {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: 10px;
+}
+
+.header .nav-link.btn {
+    color: white !important;
+    font: 20px Arial, sans-serif;
+    padding: 15px 30px;
+    /* Adiciona um padding de 10px na parte superior e inferior, e 20px na esquerda e direita */
+    border-radius: 40px;
+    background-color: #44822B;
+    font-size: 40px;
+}
+
+.navbar-brand h1 {
+    color: white;
+}
+
+.thin-line {
+    background-color: white;
+    height: 10px;
+}
+
+.line {
+    background-color: white;
+    height: 10px;
+    display: flex;
+    /* Define a div como um container flexbox */
+    justify-content: space-around;
+    /* Distribui os itens igualmente ao longo do eixo horizontal com espaço igual ao redor deles */
+    background-color: #6DA25C;
+    color: #ffffff;
+    /* Define a cor dos links como preta */
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave ao mudar a cor */
+}
+
+.nav-link:hover {
+    color: darkgreen;
+    /* Muda a cor para verde escuro quando o mouse passa por cima */
+}
+
+.navbar-brand h1 {
+    font-size: 60px;
+}
+
+.navbar-brand img {
+    width: 75%;
+    height: 75%;
+    position: relative;
+    top: 15px;
+    /* Ajuste este valor conforme necessário */
+    z-index: 1;
+}
+
+.pets {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.pets-info {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    /* Define a largura do contêiner para 100% da largura da viewport */
+    height: 550px;
+    /* Define a altura do contêiner para um valor fixo */
+    overflow: hidden;
+    /* Garante que a imagem não ultrapasse o contêiner */
+}
+
+.pets-info img {
+    width: 100%;
+    /* Define a largura da imagem para 100% do contêiner */
+    height: 100%;
+    /* Define a altura da imagem para 100% do contêiner */
+    object-fit: fill;
+    /* Garante que a imagem seja redimensionada para caber no contêiner, mantendo sua proporção */
+    opacity: 0.8;
+    /* Define a opacidade da imagem para 50% */
+}
+
+.prevencao {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.prevencao h1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.prevencao-text {
+    font-size: 20px;
+    width: 70%;
+    background-color: #6DA25C;
+    padding: 100px;
+    line-height: 30px;
+}
+
+.seguranca{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+}
+
+.seguranca h1 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+
+.seguranca-text {
+    font-size: 20px;
+    width: 70%;
+    background-color: #6DA25C;
+    padding: 10px;
+    margin-bottom: 5%;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px;
+}
+
+.seguranca img {
+    width: 15%;
+    height: 15%;
+}
+
+.line {
+    background-color: #6DA25C;
+    height: 30px;
+}
+
+.container-text {
+    display: flex;
+    /* Define o container como um container flexbox */
+    justify-content: center;
+    /* Alinha o conteúdo no centro do container */
+    gap: 200px;
+    /* Adiciona um espaçamento de 20px entre os elementos */
+    margin-bottom: 10%;
+    margin-top: 7%;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-size: 35px;
+    width: 50%;
+    height: 50%;
+    text-align: justify;
+    padding: 50px;
+}
+
+.text h1 {
+    font-size: 60px;
+}
+
+.container-text img {
+    align-self: center;
+    /* Alinha a imagem verticalmente no centro */
+    width: 20%;
+    height: 20%;
+    color: white;
+}
+
+.cards-container {
+    display: flex;
+    /* Define o container como um container flexbox */
+    flex-wrap: wrap;
+    /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+    justify-content: center;
+    gap: 50px;
+    /* Adiciona um espaçamento de 50px entre os elementos */
+    flex-wrap: wrap;
+    /* Permite que os itens se movam para a próxima linha se não houver espaço suficiente */
+    margin-bottom: 10%;
+}
+
+.container-card {
+    margin: 1%;
+    /* Adiciona uma pequena margem ao redor de cada cartão */
+}
+
+.card {
+    width: 33rem;
+    background-color: #6DA25C;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+
+}
+
+.card h3 {
+    text-align: center;
+}
+
+.card-body a {
+    float: right;
+}
+
+.card-body p {
+    color: #ffffff;
+}
+
+.card-header h2 {
+    color: #ffffff;
+
+}
+
+.btn {
+    background-color: white;
+    border-radius: 100px;
+    color: black;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* .button{
+    color: white !important;
+    font: 20px Arial, sans-serif;
+    padding: 15px 30px;
+    border-radius: 40px;
+    background-color: #44822B;
+    font-size: 40px;
+    float: right;
+} */
+
+.table {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #81ab70;
+}
+
+.title h2{
+    color: white ;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.button-mid{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-criar{
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+
+}
+
+.btn-criar:hover {
+    background-color: darkgreen;
+    color: white;
+}
+
+.container h2 {
+    margin-top: 10px;
+}
+
+.container {
+    width: 700px;
+    height: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #6DA25C;
+    position: relative;
+    transform: translateY(50%);
+}
+
+.btn-home {
+    background-color: white;
+    border: none;
+    /* Remove a borda padrão */
+    border-radius: 20px;
+    color: black;
+    font-size: 20px;
+    padding: 10px 20px;
+    /* Adiciona algum preenchimento ao redor do texto */
+    transition: background-color 0.3s ease;
+    /* Adiciona uma transição suave ao mudar a cor de fundo */
+}
+
+.btn-home:hover {
+    background-color: darkgreen;
+    /* Muda a cor de fundo para verde escuro quando o mouse passa por cima */
+    color: white;
+    /* Muda a cor do texto para branco quando o mouse passa por cima */
+}
+
+.separator {
+    text-align: center;
+    padding: 20px;
+}
+
+.separator h1 {
+    margin: 0;
+    color: white;
+    font-size: 60px;
+    letter-spacing: 7px;
+}
+
+.fundador {
+    text-align: center;
+    color: white;
+    gap: 20px;
+    margin-bottom: 10%;
+}
+
+.thiago {
+    border: 7px solid #ffffff;
+    border-radius: 100%;
+}
+
+.logo {
+    background-color: #6DA25C;
+    border-radius: 100%;
+}
+
+.setas {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.fundador h1 {
+    font-size: 60px;
+}
+
+.fundador img {
+    width: 300px;
+    height: 300px;
+}
+
+.fundador-photos {
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.footer {
+    display: flex;
+    /* Define o footer como um container flexbox */
+    justify-content: space-around;
+    /* Distribui os itens igualmente ao longo do eixo horizontal */
+    background-color: #6DA25C;
+}
+
+.footer-item {
+    display: flex;
+    /* Define cada item do footer como um container flexbox */
+    flex-direction: column;
+    /* Alinha os itens verticalmente */
+    align-items: center;
+    /* Alinha os itens no centro */
+}
+
+.footer-item p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.footer-icon {
+    width: 100px;
+    /* Define a largura dos ícones */
+    height: 100px;
+    /* Define a altura dos ícones */
+}
+
+.footer {
+    margin-top: auto;
+    /* Empurra o rodapé para o final da tela */
+}
+
+.table {
+    width: 70%;
+    /* Define a largura da tabela como 70% da largura do container pai */
+    margin: auto;
+    /* Centraliza a tabela horizontalmente */
+}
+
+.table th,
+.table td {
+    text-align: center;
+    /* Centraliza o texto nas células da tabela */
+    padding: 10px;
+    /* Adiciona algum preenchimento às células da tabela */
+}
