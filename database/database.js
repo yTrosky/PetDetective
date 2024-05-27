@@ -1,9 +1,12 @@
 const Sequelize = require("sequelize");
 
-const connection = new Sequelize('guiapress','root','',{
-    host: 'localhost',
-    dialect: 'mysql',
-    timezone: "-03:00"
+const mysql = require('mysql');
+const pool = mysql.createPool({
+  connectionLimit: 10,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DBNAME
 });
 
 module.exports = connection;
